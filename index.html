@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+            
+        }
+    </style>
+    </style>
+</head>
+
+<body id=bodyimage>
+    <table class="table table-hover" style="background-color: blanchedalmond;border:1px solid black;border-radius:10px;" >
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Արթուր Վարդիկյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">կա</th>
+                <th scope="col">Ծնվել է</th>
+                <th scope="col">Եղանակ</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 1 ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը, կամ այրում է
+                    կրակը, կամ նրան կոխկրտում է գիշատիչը</td> 
+                <td id="grassKaElement"></td>
+                <td id="grassCount"></td>
+                <td ><h5 id="whater"></h1></td>
+            </tr>
+            <tr class="exanak">
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>Դեղինը խոտակերն է, որը ինտենսիվ բազմանում է և քիչ է մահանում հաց չուտելուց գարնանը և հակառակը ձմեռը  կամ
+                    երբ նրան ուտում է գիշատիչը:</td>
+                <td id="grassEaterKaElement"></td>
+                <td id="grassEaterCount"></td>
+                   
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>կարմիրը խոտակերակերն է, որը ինտենսիվ բազմանում է և քիչ է մահանում է հաց չուտելուց գարնանը և հակառակը ձմեռը:</td>
+                <td id="grassEaterEaterKaElement"></td>
+                <td id="grassEaterEaterCount"></td>
+                
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:black;"></td>
+                <td>Սևը մարդն է, որը ինտենսիվ բազմանում է և քիչ է մահանում է հաց չուտելուց գարնանը և հակառակը ձմեռը:</td>
+                <td id="mardKaElement"></td>
+                <td id="mardCount"></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <p style="background-color: blanchedalmond;width: 1000px;border:1px solid black;border-radius:10px;">
+        Գարնանը խոտակերը բազմանում է արագ"14" և մահանում է ուշ"3" խոտը բաց կանաչ է<br>
+        Ամռանը խոտակերը բազմանում է համեմատաբար արագ"15" և մահանում համեմատաբար ուշ"5" խոտը մուգ կանաչ է<br>
+        Աշնանը խոտակերը բազմանում է համեմատաբար դանդաղ"17" և մահանում համեմատաբար շուտ"4" խոտը մուգ գազարագույն է<br>
+        Ձմեռը խոտակերը բազմանում է դանդաղ"20" և մահանում է շուտ"6" խոտը սպիտակ է<br>
+        Եղանակը փոխվելու հետ մեկ տեղ փոխվում է բեքգրաունդը<br>
+        Եղանակը փոխվելու հետ մեկ տեղ փոխվում է նայև կերպարների բազմանալու և մահանալու ինտենսիվությունները<br>
+        Բոլոր կերպարները անմահ են<br>
+    </p>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
